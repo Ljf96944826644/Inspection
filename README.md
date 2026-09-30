@@ -1,3 +1,4 @@
+![主界面](docs/images/main-ui.png)
 # 垫圈视觉检测系统（HaspDemo）
 
 基于 **WinForms + 海康工业相机 + 西门子 S7-1500 + MVTec HALCON** 的垫圈外观检测演示项目，
