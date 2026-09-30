@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <None Remove="Models\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="10.0.12" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HaspDemo.Applicationsss\HaspDemo.Applicationsss.csproj" />
+    <ProjectReference Include="..\HaspDemo.Core\HaspDemo.Core.csproj" />
+    <ProjectReference Include="..\HaspDemo.Devices\HaspDemo.Devices.csproj" />
+    <ProjectReference Include="..\HaspDemo.Persistence\HaspDemo.Persistence.csproj" />
+    <ProjectReference Include="..\HaspDemo.Vision\HaspDemo.Vision.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MvCameraControl.Net">
+      <HintPath>..\..\..\MVS\MVS\Development\DotNet\win64\net40\MvCameraControl.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

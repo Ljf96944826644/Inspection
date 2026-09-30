@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="S7netplus" Version="0.20.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HaspDemo.Core\HaspDemo.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MvCameraControl.Net">
+      <HintPath>..\..\..\MVS\MVS\Development\DotNet\win64\net40\MvCameraControl.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
